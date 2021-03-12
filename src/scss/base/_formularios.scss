@@ -1,0 +1,86 @@
+.formulario-estudiante {
+    form {
+        background: $blanco;
+        border-radius: 2rem;
+        box-shadow: rgba(187, 187, 187, 1) 0 0px 20px -1px;
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 4rem;
+        font-weight: $bold;
+    }
+    fieldset {
+        border: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    label {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    input {
+        height: 4rem;
+        background-color: $gris;
+    }
+    input[type="submit"]{
+        width: 100%;
+
+        &:hover {
+            background-color: $verde;
+        }
+    }
+}
+.formulario-compra {
+    fieldset {
+        border: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input {
+        border: 0px;
+        width: 100%;
+        border-radius: .5rem;
+    }
+    .formulario-targeta {
+        display: flex;
+        justify-content: space-between;
+        height: 5rem;
+        @media (max-width: 480px) {
+            width: 20rem;
+            padding-top: .2rem;
+            padding-bottom: .1rem;
+        }
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+        input {
+            @media (max-width: 480px) {
+                width: 9rem;
+            }
+            &:first-of-type {
+                border-top-left-radius: .5rem;
+                border-bottom-left-radius: .5rem;
+                border-bottom-right-radius: 0rem;
+                border-top-right-radius: 0rem;
+            }
+            &:last-of-type {
+                border-top-left-radius: 0rem;
+                border-bottom-left-radius: 0rem;
+                border-bottom-right-radius: .5rem;
+                border-top-right-radius: .5rem;
+            }
+        }
+    }
+    label {
+        border: 0px;
+        font-size: 2rem;
+    }
+    input[type=submit] {
+        margin-top: 2rem;
+        width: 100%;
+        &:hover {
+            background-color: $verde;
+        }
+    }
+} 

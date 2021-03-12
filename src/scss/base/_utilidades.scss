@@ -1,0 +1,30 @@
+.backgris {
+    background-color: $gris;
+}
+.no-margin {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.background-azul {
+    background: linear-gradient(to bottom, rgb(2, 242, 238), rgb(33, 33, 121));
+    background-size: cover;
+}
+.background-azul2 {
+    background: linear-gradient(to bottom, rgb(2, 242, 238), rgb(33, 33, 121));
+    background-size: cover;
+}
+.background-negro-gris {
+    background: linear-gradient(to bottom, $negro, $gris);
+    background-size: cover;
+}
+.mensaje {
+    text-transform: uppercase;
+    font-weight: $bold;
+    @media (max-width: 500px){
+        font-size: 1rem;
+    }
+    &.error {
+        background-color:rgba(255, 0, 0, 0.8);
+    }
+}

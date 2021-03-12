@@ -1,0 +1,16 @@
+.boton1 {
+    background-color: $amarillo;
+    color: $blanco;
+    font-weight: $bold;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    margin-top: $separacion / 2;
+    border: none;
+
+    &:hover {
+        background-color: darken($amarillo, 5);
+        cursor: pointer;
+        text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	    background:#12C987
+    }
+}
